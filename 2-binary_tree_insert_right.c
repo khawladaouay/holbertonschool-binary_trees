@@ -13,6 +13,10 @@ struct binary_tree_s *right_node = malloc(sizeof(binary_tree_t));
 	{
 		return (NULL);
 	}
+	if (right_node == NULL)
+	{
+		return (NULL);
+	}
 	right_node->n = value;
 	right_node->parent = parent;
 	right_node->right = parent->right;
